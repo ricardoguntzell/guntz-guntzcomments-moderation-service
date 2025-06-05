@@ -20,7 +20,7 @@ public class ModerationController {
     private final ModerationValidator moderationValidator;
 
     @PostMapping
-    public ResponseEntity<ModerationOutput> validateComment(@Valid @RequestBody ModerationInput input) {
+    public ResponseEntity<ModerationOutput> validatedComment(@Valid @RequestBody ModerationInput input) {
         Moderation moderation = new Moderation(input.getCommentId(), input.getText());
 
         moderationValidator.validator(moderation);

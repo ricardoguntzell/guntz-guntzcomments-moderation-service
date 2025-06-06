@@ -1,5 +1,6 @@
-package br.com.guntz.comments.moderation.api.config.exception;
+package br.com.guntz.comments.moderation.api.config;
 
+import br.com.guntz.comments.moderation.api.config.exception.InvalidUUIDException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
 import org.springframework.validation.FieldError;
